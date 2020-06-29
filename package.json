@@ -3,7 +3,7 @@
 	"displayName": "vscode-post-cdn",
     "description": "上传cdn服务",
     "publisher": "silentsvv",
-	"version": "0.0.1",
+	"version": "0.0.5",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
@@ -46,14 +46,16 @@
 		"menus": {
 			"editor/context": [
 				{
+                    "when": "resourceScheme == file",
 					"command": "vscode-post-cdn.postCdn",
-					"group": "navigation"
+					"group": "7_modification"
 				}
 			],
 			"explorer/context": [
 				{
+                    "when": "resourceScheme == file",
 					"command": "vscode-post-cdn.postCdn",
-					"group": "navigation"
+					"group": "7_modification"
 				}
 			]
 		}

@@ -119,6 +119,7 @@ class PostCdn {
                     headers: {
                         ...formHeaders,
                     },
+                    'maxContentLength': Infinity
                 })
                 .then(async (response: PostResponse) => {
                     Logger.log(`request: ${response ? JSON.stringify(response.data) : response}`);
